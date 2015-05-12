@@ -8,4 +8,6 @@
 
 class LagouCrawlerPipeline(object):
     def process_item(self, item, spider):
-        return item
+        return item;
+        # filename = "shanghai-zhaopin"
+        # open(filename, 'wb').write(item.title)
