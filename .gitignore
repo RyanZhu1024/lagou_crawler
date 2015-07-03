@@ -1,9 +1,5 @@
-
 .idea/.name
-
 *.xml
-
 *.iml
-
 *.pyc
-
+__init__.pyc
