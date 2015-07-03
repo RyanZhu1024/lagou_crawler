@@ -1,6 +1,7 @@
 # coding=utf-8
 from lagou_crawler.data_models.job_source import JobSource
 from lagou_crawler.data_models.menu_items import MenuItem
+from lagou_crawler.data_models.job_item import JobItem
 
 __author__ = 'shuxuan'
 
@@ -23,6 +24,11 @@ def find_by_job_id(model):
     model_collection = model.__class__.collection
     db_collection = db[model_collection]
     return db_collection.find_one({"job_id": model.job_id})
+
+
+def find_job_detail_by_job_id(job_id):
+    db_collection = db[JobItem.collection]
+    return db_collection.find_one({"job_id": job_id})
 
 
 def find__menu_all_keywords():
