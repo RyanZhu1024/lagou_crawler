@@ -12,7 +12,7 @@ from lagou_crawler.data_models.menu_items import MenuItem
 
 
 class LagouSpider(Spider):
-    name = "lagou"
+    name = "main_menu"
     allowed_domains = ["lagou.com"]
 
     start_urls = [
